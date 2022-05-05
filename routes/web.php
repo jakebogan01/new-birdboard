@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProjectsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 Route::middleware([
     'auth:sanctum',
@@ -25,4 +26,15 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+
+    Route::get('/projects', [ProjectsController::class, 'index'])
+        ->name('projects.index');
+
+    Route::get('/projects/create', [ProjectsController::class, 'create'])
+        ->name('projects.create');
+
+    Route::post('/projects', [ProjectsController::class, 'store']);
+
+    Route::get('/projects/{project}', [ProjectsController::class, 'show'])
+        ->name('projects.show');
 });
