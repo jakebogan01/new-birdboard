@@ -15,13 +15,17 @@
                     <dt class="text-sm text-purple-600 font-bold">
                         Title
                     </dt>
-                    <dd class="mt-1 text-sm text-gray-900">Margot Foster</dd>
+                    <dd class="mt-1 text-sm text-gray-900">
+                        {{ $project->title }}
+                    </dd>
                 </div>
                 <div class="sm:col-span-2">
                     <dt class="text-sm text-purple-600 font-bold">
                         Description
                     </dt>
-                    <dd class="mt-1 text-sm text-gray-900">Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur qui ipsum aliquip consequat sint. Sit id mollit nulla mollit nostrud in ea officia proident. Irure nostrud pariatur mollit ad adipisicing reprehenderit deserunt qui eu.</dd>
+                    <dd class="mt-1 text-sm text-gray-900">
+                        {{ $project->description }}
+                    </dd>
                 </div>
                 <div class="flex justify-start">
                     <a href="{{ route('projects.index') }}" class="flex items-center justify-center py-2 px-4 border border-transparent shadow-sm text-sm rounded-md text-white font-bold bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
