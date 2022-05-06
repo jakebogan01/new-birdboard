@@ -48,12 +48,12 @@
             @if($key % 2 === 0)
                 <div class="rounded-tr-lg sm:rounded-tr-none hover:rounded-lg relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500 transform hover:scale-99 transition-all">
                     <div>
-                    <span class="rounded-lg inline-flex p-3 bg-purple-50 text-purple-700 ring-4 ring-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                        </svg>
-                    </span>
+                        <span class="rounded-lg inline-flex p-3 bg-purple-50 text-purple-700 ring-4 ring-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                            </svg>
+                        </span>
                     </div>
                     <div class="mt-8">
                         <h3 class="text-lg font-medium">
@@ -63,7 +63,7 @@
                             </a>
                         </h3>
                         <p class="mt-2 text-sm text-gray-500">
-                            {{ $project->description }}
+                            {!! Str::words($project->description, 10) !!}
                         </p>
                     </div>
                     <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">
@@ -107,7 +107,7 @@
         <ul role="list" class="-mb-8">
             <li>
                 <div class="relative pb-8">
-                    <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-800" aria-hidden="true"></span>
+                    <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-600" aria-hidden="true"></span>
                         <div class="relative flex space-x-3">
                             <div>
                                 <span class="h-8 w-8 rounded-full bg-gray-400 flex items-center justify-center ring-8 ring-gray-700">
@@ -130,7 +130,7 @@
             </li>
             <li>
                 <div class="relative pb-8">
-                    <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-800" aria-hidden="true"></span>
+                    <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-600" aria-hidden="true"></span>
                         <div class="relative flex space-x-3">
                             <div>
                                 <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-gray-700">
@@ -153,7 +153,7 @@
             </li>
             <li>
                 <div class="relative pb-8">
-                    <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-800" aria-hidden="true"></span>
+                    <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-600" aria-hidden="true"></span>
                         <div class="relative flex space-x-3">
                             <div>
                                 <span class="h-8 w-8 rounded-full bg-green-500 flex items-center justify-center ring-8 ring-gray-700">
@@ -177,7 +177,7 @@
             </li>
             <li>
                 <div class="relative pb-8">
-                    <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-800" aria-hidden="true"></span>
+                    <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-600" aria-hidden="true"></span>
                         <div class="relative flex space-x-3">
                             <div>
                                 <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-gray-700">
